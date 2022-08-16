@@ -1,0 +1,15 @@
+.site-header{
+    background-color: #000000D9;
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.py-2:hover {
+    color: #fff;
+}
+

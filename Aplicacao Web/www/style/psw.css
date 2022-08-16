@@ -1,0 +1,58 @@
+/* Style all input fields */
+.campo{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* Style the submit button */
+input[type=submit] {
+background-color: #04AA6D;
+color: white;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+display:none;
+background: #f8f9fa!important;
+color: #000;
+position: relative;
+padding: 20px;
+margin-top: 10px;
+border-radius: .25rem;
+}
+
+#message p {
+padding: 10px 35px;
+font-size: 1rem;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+color: green;
+}
+
+.valid:before {
+position: relative;
+left: -35px;
+content: "✔";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+color: red;
+}
+
+.invalid:before {
+position: relative;
+left: -35px;
+content: "❌";
+}
