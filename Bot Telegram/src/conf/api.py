@@ -7,10 +7,10 @@ def write_file(data, filename):
 
 def get_techer_id(phone):
     try:
-        connection = mysql.connector.connect(host='chatbot.mysql.dbaas.com.br',
-                                             database='chatbot',
-                                             user='chatbot',
-                                             password='chatbot2021')
+        connection = mysql.connector.connect(host='',
+                                             database='',
+                                             user='',
+                                             password='')
 
         cursor = connection.cursor()
         sql_select_query = """SELECT teacher_ID FROM teachers WHERE phone = %s"""
@@ -32,10 +32,10 @@ def get_techer_id(phone):
 
 def get_content(id, fullName):
     try:
-        connection = mysql.connector.connect(host='chatbot.mysql.dbaas.com.br',
-                                             database='chatbot',
-                                             user='chatbot',
-                                             password='chatbot2021')
+        connection = mysql.connector.connect(host='',
+                                             database='',
+                                             user='',
+                                             password='')
 
         cursor = connection.cursor()
         sql_select_query = """SELECT content FROM schedule WHERE teacher_ID = %s"""
